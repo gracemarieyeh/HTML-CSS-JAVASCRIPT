@@ -44,7 +44,6 @@ function startRecording() {
 
 
         rec.record()
-        recordButton.style.backgroundColor = "#FFA500"
 
         console.log("Recording started");
         stopButton.disabled = false;
@@ -62,7 +61,6 @@ function stopRecording() {
 
     stopButton.disabled = true;
     recordButton.disabled = false;
-    recordButton.style.backgroundColor = "#16d616"
 
     //tell the recorder to stop the recording
     rec.stop();
@@ -85,7 +83,7 @@ function createDownloadLink(blob) {
 
 
     //name of .wav file to use during upload and download (without extendion)
-    var filename = "Audio";
+    var filename = new Date().toISOString();
 
     //add controls to the <audio> element
     au.controls = true;
@@ -105,7 +103,7 @@ function createDownloadLink(blob) {
     //save to disk link
     link.href = url;
     link.download = filename + ".wav"; //download forces the browser to donwload the file using the  filename
-    link.innerHTML = "D";
+    link.innerHTML = "Save to disk";
 
     //add the new audio element to li
 
