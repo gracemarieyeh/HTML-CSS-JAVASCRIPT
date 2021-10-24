@@ -1,0 +1,21 @@
+
+body {
+    background-color :black;
+}
+
+h1 {
+    color : blue;
+    font-size : 80px;
+}
+
+.styletype1 {
+    color : purple;
+    font-family : Arial, Helvetica, sans-serif;
+    size : 20px;
+}
+
+.styletype2 {
+    color :yellowgreen;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    size : 20px;
+}

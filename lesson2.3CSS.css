@@ -1,0 +1,14 @@
+nes (10 sloc)  162 Bytes
+   
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.heading {
+    color: red;
+}
+
+#pleasechange {
+    background-color: lightgreen;
+}
